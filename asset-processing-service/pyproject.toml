@@ -6,7 +6,7 @@ authors = ["Murty Gudipati <murty.gudipati@saven.in>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.12"
 
 [tool.poetry.scripts]
 asset-processing-service = "asset_processing_service.main:main"

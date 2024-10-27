@@ -1,10 +1,9 @@
+import exp from "constants";
 import React from "react";
 
-export default async function ProjectPage({
-  params,
-}: {
-  params: { projectId: string };
-}) {
+type Params = Promise<{ projectId: string }>;
+
+export default async function ProjectPage({ params }: { params: Params }) {
   const { projectId } = await params;
   return <div>Project Page {projectId}</div>;
 }

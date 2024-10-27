@@ -1,9 +1,9 @@
 import React from "react";
 
-interface TemplatePageProps {
+export default function TemplatePage({
+  params,
+}: {
   params: { templateId: string };
-}
-
-export default function TemplatePage({ params }: TemplatePageProps) {
+}) {
   return <div>Template Page {params.templateId}</div>;
 }

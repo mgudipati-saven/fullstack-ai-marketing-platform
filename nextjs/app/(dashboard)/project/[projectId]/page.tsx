@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function ProjectPage({
-  params,
-}: {
+interface ProjectPageProps {
   params: { projectId: string };
-}) {
-  return <div>Project Page {params.projectId}</div>;
+}
+
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { projectId } = await params;
+  return <div>Project Page {projectId}</div>;
 }

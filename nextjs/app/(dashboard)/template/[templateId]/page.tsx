@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function TemplatePage({
-  params,
-}: {
+interface TemplatePageProps {
   params: { templateId: string };
-}) {
-  return <div>Template Page {params.templateId}</div>;
+}
+
+export default async function TemplatePage({ params }: TemplatePageProps) {
+  const { templateId } = await params;
+  return <div>Template Page {templateId}</div>;
 }
